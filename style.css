@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: rgb(130, 130, 226);
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+}
+
+a:hover {
+  background-color: rgb(67, 67, 85);
+}
