@@ -1,14 +1,38 @@
+/*CSS PRINCIPAL*/
+
 body {
   margin: 0;
   text-align: center;
+  font-size: 20px;
+}
+
+img {
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+a:hover {
+  background-color: rgb(162, 162, 169);
+}
+
+/*CSS PAR SECTION*/
+
+/*HEADER*/
+
+#menu-toggle,
+.menu-icon {
+  visibility: hidden;
 }
 
 header {
-  background-color: rgb(130, 130, 226);
+  background-color: #b3b3b3;
   padding: 20px;
-  /*position: fixed;*/
   top: 0;
-  width: 90%;
+  width: 100;
 }
 
 nav {
@@ -22,21 +46,27 @@ nav a {
   color: black;
 }
 
-a:hover {
-  background-color: rgb(67, 67, 85);
-}
+/*MAIN*/
 
 h1 {
   margin-top: 100px;
+  visibility: hidden;
+}
+
+#ancre1 {
+  margin-top: -100px;
 }
 
 #container1 {
   display: flex;
-  align-items: center;
+  align-items: start;
   margin: 100px;
   margin-top: 30px;
   margin-bottom: 20px;
-  background-color: gray;
+}
+
+.presentation {
+  margin-top: 120px;
 }
 
 .item {
@@ -45,7 +75,7 @@ h1 {
 
 #pdf {
   text-align: center;
-  background-color: rgb(76, 76, 161);
+  background-color: #a0a2ce;
   width: 300px;
   height: 100px;
   margin-left: 38%;
@@ -53,34 +83,103 @@ h1 {
 
 #pdf a {
   color: black;
-  font-size: x-large;
+  font-size: 25px;
   text-decoration: none;
   font-weight: bold;
-  line-height: 16vh;
+  line-height: 18vh;
 }
 
 h2 {
   margin-top: 60px;
+  font-size: 50px;
 }
 
-ul {
-  list-style: none;
+h3 {
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  margin-top: 60px;
 }
 
-ul img {
-  width: 100px;
-  height: 100px;
+#collectif {
+  width: 650px;
 }
 
-li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#manette {
+  width: 300px;
+  margin-top: -25px;
+}
+
+#web {
+  width: 300px;
   margin-top: 40px;
 }
 
+#github {
+  width: 100px;
+}
+
+#linkgithub {
+  background-color: transparent;
+}
+
+#language {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+#logo {
+  object-fit: cover;
+  height: 100px;
+}
+
+.comp1 {
+  text-align: left;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.comp2 {
+  text-align: right;
+  margin-right: 150px;
+  margin-top: 50px;
+}
+
+#formation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#diplome {
+  width: 200px;
+}
+
+.pro {
+  display: flex;
+  align-items: center;
+}
+
+.ipro {
+  width: 200px;
+  margin-top: 50px;
+}
+
+#hobbies {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.loisir {
+  width: 200px;
+}
+
+/*FOOTER*/
+
 footer {
-  background-color: rgb(130, 130, 226);
+  background-color: #b3b3b3;
   padding: 20px;
   text-align: center;
   display: flex;
@@ -95,7 +194,89 @@ footer a {
   font-size: 20px;
 }
 
+#linklinkedin {
+  background-color: transparent;
+}
+
 footer a img {
   width: 50px;
   height: 50px;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu ul li {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    visibility: visible;
+  }
+
+  #menu-toggle {
+    display: none;
+    visibility: visible;
+  }
+
+  #menu-toggle:checked + .menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    z-index: 1;
+  }
+
+  .menu ul li {
+    border-bottom: 1px solid #ccc;
+  }
+
+  #menu-toggle:checked + .menu {
+    display: block;
+  }
+
+  #container1 {
+    flex-wrap: wrap;
+  }
+
+  #collectif {
+    width: 470px;
+  }
+
+  #language {
+    flex-wrap: wrap;
+  }
+
+  .ipro {
+    margin: 0;
+  }
 }

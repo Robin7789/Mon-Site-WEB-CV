@@ -6,9 +6,14 @@
     <title>Site WEB CV Robin Ravier</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
+
   <body>
+
     <header>
-      <nav>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <nav class="menu">
         <a href="#ancre1">Présentation</a>
         <a href="#ancre2">Projet</a>
         <a href="#ancre3">Compétences</a>
@@ -22,106 +27,155 @@
       <h2 id="ancre1">Présentation</h2>
       <div id="container1">
         <div class="item">
+          <h3>Portrait Professionnel</h3>
           <img src="image/moi.png" alt="Une photo de Robin Ravier" />
         </div>
         <div class="item">
           <h3>Accroche</h3>
-          <p>
-            Je suis Robin RAVIER (22 ans), actuellement en formation de
-            Développeur Web/Web mobile chez Human Booster à Villeurbanne.
-            Auparavant j’ai réalisé mon service civique au sein de Pôle Emploi
-            Villeurbanne en tant qu’ambassadeur du numérique, ce qui m'a permis
-            d'acquérir des compétences d'entreprises. En ce moment j’étudie des
-            langages informatiques et mon projet professionnel est de devenir
-            Développeur Web et par la suite Développeur Jeux Vidéos.
+          <p class="presentation">
+            Je suis Robin RAVIER (22 ans), actuellement en formation de Développeur Web/Web mobile chez Human Booster à Villeurbanne. Auparavant j’ai réalisé mon service civique au sein de Pôle Emploi Villeurbanne en tant qu’ambassadeur du numérique, ce qui m'a permis d'acquérir des compétences d'entreprises. En ce moment j’étudie des langages informatiques et mon projet professionnel est de devenir Développeur Web et par la suite Développeur Jeux Vidéos.
           </p>
         </div>
         <div class="item">
           <h3>Coordonnées</h3>
-          <p>
-            Domicile: <br />
-            Villeurbanne (69100) <br />Age: <br />
-            22 ans <br />Permis B: <br />
-            Véhicule personnel
-          </p>
+          <ul class="presentation">
+            <li>Domicile: Villeurbanne (69100)</li>
+            <li>Age: 22 ans </li> 
+            <li>Mobilité: Permis B (Véhicule personnel)
+          </li>
+          </ul>
         </div>
       </div>
       <div id="pdf">
-        <a href="pdf/CV_2023-11-21_ROBIN_RAVIER.pdf" download
-          >Télécharger Mon CV</a
+        <a href="pdf/CV_2023-11-21_ROBIN_RAVIER.pdf" download>Télécharger Mon CV</a
         >
       </div>
       <h2 id="ancre2">Projet</h2>
+      <div id="container2">
+        <div>
+            <h3>Mes projets réalisés</h3>
+            <p><strong>En formation :</strong> J’ai réalisé un projet collectif qui présente notre équipe (site en local pour le moment). Nous avons choisi un thème sur l’espace et notre équipe était représentée sous forme d’astronautes et notre formation étant notre voyage spatial.</p>
+            <img id="collectif" src="image/projet-co.png" alt="Une photo de notre équipage en astronautes">
+            <p><strong>Perso : </strong>J'ai réalisé mon portefolio sur github :
+              <a id="linkgithub" href="https://robin7789.github.io/Mon-Site-WEB-CV/"><img id="github" src="image/GitHub-logo.png" alt="Le logo de Github"></a></p>
+        </div>
+        <div>
+            <h3>Mes projets futurs</h3>
+            <p><strong>Professionnel et Perso : </strong>Créer des jeux vidéos</p>
+            <img id="manette" src="image/téléchargement.jpg" alt="La photo d'une manette de jeu vidéo">
+            <p><strong>Professionnel et Perso : </strong>Créer des sites WEB</p>
+            <img id="web" src="image/Learning Web Design_ How to Get Started and Not Give Up.jpg" alt="Un logo WEB pour signifié les sites WEB">
+        </div>
+      </div>
       <h2 id="ancre3">Compétences</h2>
       <h3>Compétences Informatiques</h3>
-      <ul>
-        <li>
-          HTML
-          <img
+      <div id="language">        
+          <img id="logo"
             src="image/HTML5_logo_and_wordmark.svg.png"
             alt="le logo de HTML"
-          />
-        </li>
-        <li>
-          CSS
-          <img
+          />              
+          <img id="logo"
             src="image/CSS3_logo_and_wordmark.svg.png"
             alt="le logo de css"
-          />
-        </li>
-        <li>
-          JAVASCRIPT
-          <img
+          />              
+          <img id="logo"
             src="image/Javascript_badge.svg.png"
             alt="le logo de javascript"
-          />
-        </li>
-        <li>
-          PHP
-          <img src="image/PHP-logo.svg.png" alt="le logo de php" />
-        </li>
-        <li>
-          SQL
-          <img src="image/Sql_data_base_with_logo.png" alt="le logo de sql" />
-        </li>
-        <li>
-          WORDPRESS
-          <img
+          />            
+          <img id="logo" 
+          src="image/PHP-logo.svg.png" 
+          alt="le logo de php" 
+          />                
+          <img id="logo" 
+          src="image/Sql_data_base_with_logo.png" 
+          alt="le logo de sql" 
+          />       
+          <img id="logo"
             src="image/wordpress-6942722_1280.webp"
             alt="le logo de wordpress"
+          />              
+          <img id="logo" 
+          src="image/symfony.svg" 
+          alt="le logo de symfony" 
           />
-        </li>
-        <li>
-          SYMFONY
-          <img src="image/symfony.svg" alt="le logo de symfony" />
-        </li>
-        <li>
-          ANGULAR
-          <img src="image/angular-icon.svg" alt="le logo de angular" />
-        </li>
-      </ul>
+          <img id="logo" 
+          src="image/angular-icon.svg" 
+          alt="le logo de angular" 
+          />
+        </div>
       <h3>Compétences Transverses</h3>
-      <ul>
-        <li>
-          Réaliser une veille sur les nouveautés en termes de technologie et de
-          développement web
-        </li>
-        <li>Comprendre les besoins utilisateurs</li>
-        <li>Étudier une demande client</li>
-        <li>Travailler en autonomie</li>
-        <li>Intégrer une équipe rapidement</li>
-        <li>Prévenir et gérer des conflits</li>
-      </ul>
+        <p class="comp1">Réaliser une veille sur les nouveautés en termes de technologie et de développement web</p>
+       <p class="comp2">Comprendre les besoins utilisateurs</p>
+      <p class="comp1">Étudier une demande client</p>
+       <p class="comp2">Travailler en autonomie</p>
+      <p class="comp1">Intégrer une équipe rapidement</p> 
+       <p class="comp2">Prévenir et gérer des conflits</p>     
       <h2 id="ancre4">Expériences</h2>
+      <h3>Formation et Diplôme</h3>
+      <div id="formation">
+        <div>
+      <img id="diplome" src="image/Download Graduation cap and diploma  for free.jpg" alt="La photo d'une remise de diplôme">
+    </div>
+    <div>
+      <p>BAC ES : 2019</p><br>
+      <p>DEVELOPPEUR WEB/WEB Mobile Titre de niveau 5 (bac+2) inscrit au RNCP : De novembre 2023 à novembre 2024</p>
+    </div>
+  </div>
+  <div>
+      <h3>Expériences Professionnelles</h3>
+      <div class="pro">
+        <p><strong>Service Civique:</strong>
+          De juin 2022 à janvier 2023 au Pôle Emploi Villeurbanne [ - Ambassadeur du numérique - Accueillir divers publics - Compréhension de la demande du client - Utilisation des outils Pôle Emploi (système informatique et bureautique)]</p>
+        <img class="ipro" src="image/pole emploi.jpg" alt="La photo du bâtiment Pôle Emploi">
+      </div>
+      <div class="pro">
+        <p><strong>Peintre en bâtiment:</strong>
+          De mai 2021 à août 2021 chez RAVIER Peinture Villeurbanne [ - Techniques de peinture (pinceau, rouleau) - Respecter la sécurité sur un chantier (chaussures de sécurité, casque) - Respecter la propreté des lieux (protéger le sol)]
+          </p>
+        <img class="ipro" src="image/logo-du-rouleau-et-du-pinceau-de-peintre-doutils-t-shirt-homme.jpg" alt="Le logo d'un pinceau et d'un rouleau">
+      </div>
+      <div class="pro">
+        <p><strong>Stage:</strong>
+          De juin 2016 à juillet 2016 à la Mairie de Villeurbanne (direction des sports) [ - Observation du métier d’éducateur sportif (ETAPS) - Animation avec des enfants (natation, football et escalade) - Sécurité et gestion du matériel - Administration]
+          </p>
+        <img class="ipro" src="image/vignette-mairie.jpg" alt="La photo de la Mairie de Villeurbanne">
+      </div>
+      <div class="pro">
+        <p><strong>Stage:</strong>
+          De février 2015 à mars 2015 chez PIA GASIL Villeurbanne [ - Coloriste - Accueil clientèle - Rangement dépôt, mise en rayon]</p>
+        <img class="ipro" src="image/piaGazil.jpg" alt="La photo du bâtiment Pia Gasil">
+      </div>
       <h2 id="ancre5">Centres d'intérêt</h2>
+      <div id="hobbies">
+        <div>
+      <h3>Jeux Vidéos</h3>
+      <ul>
+        <img class="loisir" src="image/trophees-platine-playstation.jpg" alt="La photo d'un trophée platine playstation">
+        <li>PS5 (33 trophées platines)</li>
+        <li>PC</li>
+        <li>Switch</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Sports</h3>
+      <ul>
+        <img class="loisir" src="image/karate.jpg" alt="Le logo du karaté">
+        <li>Karaté (ceinture noire)</li>
+        <li>MMA</li>
+        <li>Natation</li>
+      </ul>
+    </div>
+    </div>
     </main>
+
     <footer>
       <a href="">Mentions légales</a>
-      <a
+      <a id="linklinkedin"
         href="https://www.linkedin.com/in/robin-ravier-293a23276/"
         target="_blank"
         ><img src="image/LinkedIn_icon.svg.png" alt="Le logo de Linkedin"
       /></a>
     </footer>
+
   </body>
 </html>
