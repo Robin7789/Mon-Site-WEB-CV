@@ -23,11 +23,6 @@ a:hover {
 
 /*HEADER*/
 
-#menu-toggle,
-.menu-icon {
-  visibility: hidden;
-}
-
 header {
   background-color: #b3b3b3;
   padding: 20px;
@@ -38,6 +33,7 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 nav a {
@@ -107,7 +103,7 @@ h3 {
 
 #manette {
   width: 300px;
-  margin-top: -25px;
+  margin-top: -18px;
 }
 
 #web {
@@ -136,14 +132,14 @@ h3 {
 }
 
 .comp1 {
-  text-align: left;
-  margin-left: 150px;
+  text-align: center;
+  margin-right: 550px;
   margin-top: 50px;
 }
 
 .comp2 {
-  text-align: right;
-  margin-right: 150px;
+  text-align: center;
+  margin-left: 550px;
   margin-top: 50px;
 }
 
@@ -151,6 +147,10 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+#baces {
+  text-align: left;
 }
 
 #diplome {
@@ -206,66 +206,20 @@ footer a img {
 /*MEDIA QUERIES*/
 
 @media only screen and (max-width: 768px) {
-  .menu {
-    display: none;
+  header {
+    visibility: hidden;
   }
 
-  .menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .menu ul li {
-    padding: 10px 0;
-    text-align: center;
-  }
-
-  .menu ul li a {
-    text-decoration: none;
-    color: #333;
-    display: block;
-  }
-
-  .menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-    display: block;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    visibility: visible;
-  }
-
-  #menu-toggle {
-    display: none;
-    visibility: visible;
-  }
-
-  #menu-toggle:checked + .menu {
-    display: block;
-  }
-
-  .menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    background-color: #f9f9f9;
-    z-index: 1;
-  }
-
-  .menu ul li {
-    border-bottom: 1px solid #ccc;
-  }
-
-  #menu-toggle:checked + .menu {
-    display: block;
+  #ancre1 {
+    margin-top: -200px;
   }
 
   #container1 {
     flex-wrap: wrap;
+  }
+
+  #pdf {
+    margin-left: 100px;
   }
 
   #collectif {
@@ -273,10 +227,28 @@ footer a img {
   }
 
   #language {
-    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #logo {
+    margin-top: 30px;
+  }
+
+  .comp1,
+  .comp2 {
+    margin: 0;
+    margin-top: 60px;
+  }
+
+  #baces {
+    text-align: center;
   }
 
   .ipro {
     margin: 0;
+  }
+
+  #hobbies {
+    flex-wrap: wrap;
   }
 }
