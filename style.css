@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   text-align: center;
   font-size: 20px;
 }
@@ -33,7 +34,7 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 nav a {
@@ -70,11 +71,13 @@ h1 {
 }
 
 #pdf {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 41.5%;
   background-color: #a0a2ce;
   width: 300px;
   height: 100px;
-  margin-left: 38%;
 }
 
 #pdf a {
@@ -82,7 +85,6 @@ h1 {
   font-size: 25px;
   text-decoration: none;
   font-weight: bold;
-  line-height: 18vh;
 }
 
 h2 {
@@ -160,6 +162,7 @@ h3 {
 .pro {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .ipro {
@@ -216,10 +219,18 @@ footer a img {
 
   #container1 {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  p.presentation {
+    margin: -15%;
+    margin-top: 60%;
   }
 
   #pdf {
     margin-left: 100px;
+    justify-content: center;
+    margin-left: 11.5%;
   }
 
   #collectif {
@@ -242,6 +253,10 @@ footer a img {
 
   #baces {
     text-align: center;
+  }
+
+  .pro {
+    flex-direction: column;
   }
 
   .ipro {
